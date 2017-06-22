@@ -1,0 +1,23 @@
+/*Page Confirm Check*/
+.bg-yellow{
+  background-color: #fbd43b;
+}
+.txt-purple{
+  color: #38052a;
+}
+.bg-message{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img-big-check{
+  width: 130px;
+  height: 130px;
+}
+.container p{
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 10px 0;
+}

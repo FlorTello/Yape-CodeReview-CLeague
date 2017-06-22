@@ -12,7 +12,7 @@ const render = (root) => {
   root.append(wrapper);
 }
 const state = {
-  page: 4,
+  page: 5,
   user: {},
 };
 
