@@ -17,9 +17,6 @@ const state = {
 };
 
 $( _ => {
-    state.card.cardNumber="1123456789234562";
     const root = $("#root");
     render(root);
-    $('.carousel').carousel({fullWidth: true});
-    $('.carousel.carousel-slider').carousel({fullWidth: true});
 });
