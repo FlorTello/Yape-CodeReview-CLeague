@@ -17,14 +17,14 @@ const state = {
 };
 
 $( _ => {
-    var phone = prompt('Igresa phone');
-    const newUser = {
-      "phone": phone,
-      "terms": true
-    }
-    postPhone(newUser).then((response) => {
-        state.user.phone = response.data.phone;
-      });
     const root = $("#root");
     render(root);
+    // var phone = prompt('Igresa phone');
+    // const newUser = {
+    //   "phone": phone,
+    //   "terms": true
+    // }
+    // postPhone(newUser).then((response) => {
+    //   state.user.phone = response.data.phone;
+    // });
 });
