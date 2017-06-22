@@ -3,10 +3,11 @@
 const render = (root) => {
   root.empty();
   const wrapper = $('<div class="wrapper"></div>');
+
   if(state.page == 4){
-    wrapper.append(RegiterUser(_=>{render(root)}));
+    wrapper.append(RegiterUser(_=>{ render(root) }));
   }else  if(state.page == 5){
-    wrapper.append(CheckRegister(_=>{render(root)}));
+    wrapper.append(CheckRegister(_=>{ render(root) }));
   }
 
   root.append(wrapper);
