@@ -20,12 +20,12 @@ const state = {
 $( _ => {
     const root = $("#root");
     render(root);
-    var cel = prompt('Igresa phone');
-    const newUser = {
-      "phone": cel,
-      "terms": true
-    }
-    postPhone(newUser).then((response) => {
-      state.user.phone = response.data.phone;
-    });
+    // var cel = prompt('Igresa phone');
+    // const newUser = {
+    //   "phone": cel,
+    //   "terms": true
+    // }
+    // postPhone(newUser).then((response) => {
+    //   state.user.phone = response.data.phone;
+    // });
 });

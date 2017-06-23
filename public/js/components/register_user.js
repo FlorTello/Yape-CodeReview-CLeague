@@ -15,7 +15,7 @@ const RegiterUser = (update) =>{
   const password    = $('<input id="contrass" class="center" type="password" placeholder="Ingresa clave de 6 digitos" name="" value="">');
   const iconcontrass = $('<img class="ubiccontrass" src="img/icons/lock.png">');
   const spanmensaje = $('<p class="center-align">Cuida esta clave como oro, es tu acceso a Yape.</p>');
-  const cuenta      = $('<button id="crearcuenta" type="button" class="waves-effect waves-light btn" name="button" disabled>CREAR CUENTA</button>')
+  const cuenta      = $('<button id="crearcuenta" type="button" class="waves-effect waves-light btn amber accent-3" name="button" disabled>CREAR CUENTA</button>')
 
   formulario.append(nombre);
   formulario.append(iconnombre);
@@ -41,6 +41,11 @@ const activarCheck = _ => {
 
 nombre.on({
 	keypress: ValidateLeter,
+	keyup: activarCheck
+});
+
+password.on({
+	keypress: ValidateNumber,
 	keyup: activarCheck
 });
 
