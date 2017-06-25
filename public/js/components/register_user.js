@@ -46,7 +46,18 @@ nombre.on({
 
 password.on({
 	keypress: ValidateNumber,
-	keyup: activarCheck
+	keyup:activarCheck
+});
+
+email.on({
+	keypress: () => {
+		const regexMail = /^[a-zA-Z0-9_\-\.~]{2,}@[a-z_\-\.~]{2,}\.[a-z]{2,4}$/;
+		console.log(regexMail.test(email.val()));
+		if (regexMail.test(email.val())) {
+			activarCheck()
+		}
+	},
+	keyup:activarCheck
 });
 
 	cuenta.on('click',(e) => {
@@ -58,13 +69,12 @@ password.on({
 			email : email.val(),
 			password : password.val()
 		},(response) =>{
+			console.log(response);
 			if (response.success) {
-				state.page == 5;
-				update();
-				console.log(response);
-			} else {
-				state.page == 4
-				update();
+				state.page = 5;
+		    window.setTimeout(_=>{
+		      update();
+		    }, 3000);
 			}
 		});
 	});
