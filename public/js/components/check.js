@@ -1,9 +1,9 @@
 'use strict';
 
 const CheckRegister = (update) => {
-  const section         = $('<div class="amber accent-3"></div>');
-  const container       = $('<div class="container bg-message"></div>');
-  const bigCheck        = $('<img class="img-big-check" src="img/icons/check.png">');
+  const section         = $('<section class="amber accent-3"></section>');
+  const container       = $('<div class="bg-message center-align"></div>');
+  const bigCheck        = $('<img class="big-check" src="img/icons/check.png">');
   const paragraphOne    = $('<p class="txt-purple">¡Bien!</p>');
   const paragraphTwo    = $('<p class="txt-purple">Ahora puedes usar Yape</p>');
 

@@ -1,7 +1,7 @@
 
 'use strict';
 const RegiterUser = (update) =>{
-
+	const container   = $('<div class="container"></div>');
 	const row         = $('<div class="row center"></div>');
   const cols10      = $('<div class="col s10 offset-s1 center"></div>');
   const imgcrear    = $('<img class="logoTelefono" src="img/icons/lockone.png">');
@@ -30,13 +30,13 @@ const RegiterUser = (update) =>{
   cols10.append(descrip41);
   cols10.append(formulario);
   row.append(cols10);
+	container.append(row);
 
 const activarCheck = _ => {
 	if(nombre.val().length >= 2 && email.val() != '' && password.val().length == 6){
 		cuenta.removeAttr('disabled');
 	}else
 	cuenta.attr('disabled','false');
-
 };
 
 nombre.on({
@@ -68,5 +68,5 @@ password.on({
 			}
 		});
 	});
-	return row;
+	return container;
 };
