@@ -20,7 +20,7 @@ const state = {
 $( _ => {
     const root = $("#root");
     render(root);
-    var cel = prompt('Igresa phone');
+    var cel = prompt('Ingresa phone');
     const newUser = {
       "phone": cel,
       "terms": true

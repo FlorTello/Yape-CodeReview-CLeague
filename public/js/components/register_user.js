@@ -72,9 +72,10 @@ email.on({
 			console.log(response);
 			if (response.success) {
 				state.page = 5;
-		    window.setTimeout(_=>{
-		      update();
-		    }, 3000);
+				update();
+		    // window.setTimeout(_=>{
+		    //   update();
+		    // }, 3000);
 			}
 		});
 	});
