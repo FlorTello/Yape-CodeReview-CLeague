@@ -1,17 +1,18 @@
 # yape
 
-Yape es una aplicación que permite la transfrencia de dinero de manera virtual.
+**Cada cosa paja por hacer empieza con un yape**
+Yape es una aplicación que permite la transfrencia de dinero de manera virtual, fácil y rápido.
 
 ## Registro de usuario
 
 + Tercera fase en el registro a Yape.   
 + Por ser una fase avanzada del registro, obtenemos el número de celular mediante un **prompt**
 + Validacione: Nombre, correo electrónico y clave.
-+ El botón ![Botón crear cuenta inactivo](public/img/screen/btn-crear-cuenta.JPG "Botón crear cuenta inactivo") sólo se activa cuando el usuario llena todos los datos.
++ El botón ![Botón crear cuenta inactivo](public/img/screen/btn-crear-cuenta.png "Botón crear cuenta inactivo") sólo se activa cuando el usuario llena todos los datos.
 
 ![Pantalla de registro de usuario](public/img/screen/registro-usuario-.JPG "Pantalla de registro de usuario")
 
-+ Al hacer click en ![Botón crear cuenta activo](public/img/screen/active-crear-cuenta.JPG "Botón crear cuenta activo") se envían los datos a la API y pasa a la pantalla **check**
++ Al hacer click en ![Botón crear cuenta activo](public/img/screen/active-crear-cuenta.png "Botón crear cuenta activo") se envían los datos a la API y pasa a la pantalla **check**
 
 `$.post('/api/createUser',{
   phone : state.user.phone,
