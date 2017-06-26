@@ -1,7 +1,10 @@
 # yape
 
-**Cada cosa paja por hacer empieza con un yape**
-Yape es una aplicación que permite la transfrencia de dinero de manera virtual, fácil y rápido.
+**Cada cosa paja por hacer empieza con un yape**    
+
++ Yape es una aplicación para realizar pagos entre personas y a comercios de manera fácil, rápida, confiable y sin ningún costo.
+
+
 
 ## Registro de usuario
 
